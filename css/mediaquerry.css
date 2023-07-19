@@ -1,0 +1,289 @@
+@media screen and (max-width: 600px){
+    body,html{
+        max-width: 600px;
+        overflow: auto;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;;
+    }
+
+
+    /*Header*/
+    .menu-mobile{
+        display: inline-block;
+        margin: 30px 50px;
+        font-size: 30px;
+        color: var(--corsecundaria);
+    }
+    .logoaux{
+        display: none;
+    }
+    .logo{
+        width: 300px;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: block;
+        margin: 50px auto;
+    }
+    .menu{
+        display: block;
+        height: 50px;
+        width: 100%;
+        margin: 0 -10px;
+    }
+    .menu > ul > li {
+        width: 110px;
+    }
+
+    .galeria{
+        margin-top: 30px;
+        top: 0;
+    }
+    .galeria, .carrosel img{
+        width: 100%;
+        height: 300px;
+    }
+    .link h3 a{
+        display: none;
+    }
+    .link i{
+        font-size: 22px;
+    }
+    .slider-buttom{
+        margin: 0 auto;
+    }
+    section.chamada{
+        width: 600px;
+        height: 350px;
+        padding: 50px;
+    }
+    .chamada p{
+        margin: 0;
+        font-size: 13px;
+        text-align: center;
+    }
+    .chamada h1{
+        font-size: 22px;
+        margin: 10px 0;
+    }
+
+    .formulario{
+        width: 600px;
+        position: relative;
+    }
+    .formulario > input[type=email]{
+        position: absolute;
+        top: 0;
+        left: calc(50% - 50px);
+        width: 400px;
+        transform: translate(-50%, 0);
+        margin-left: 0;
+    }
+    .formulario > input[type=submit]{
+        position: absolute;
+        top: 40px;
+        left: calc(50% - 50px);
+        transform: translate(-50%, 0);
+        width: 300px;
+    }
+    .formulario i{
+        position: absolute;
+        margin: 10px;
+        top: 0;
+        left:55px;
+
+        z-index: 4;
+    }
+
+    section.services{
+        width: 600px;
+        height: auto;
+        background-color: white;
+        background-image: linear-gradient(var(--verdeclaro), white);
+    }
+    .service_master{
+        height: 480px;
+        float: none;
+        margin: 0 auto;
+        display: block;
+        background-image: linear-gradient(var(--verdeclaro), white);
+    }
+
+    .services h1{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #img-master{
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 500px;
+        height: 250px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #content-service-master{
+        padding: 10px 30px;
+        margin: 0 10px;
+    }
+    #content-service-master h2{
+        padding: 10px;
+        margin: 0;
+    }
+    #content-service-master p{
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 14px;
+        color: var(--corsecundaria);
+    }
+    #content-service-master input{
+        width: 350px;
+        position: relative;
+        display: block;
+        margin: 0 30%;
+        background-color: var(--corprincipal);
+        font-weight: lighter;
+    }
+
+    .service-item{
+        float: left;
+        width: 200px;
+        margin:30px 40px 15px 40px;
+        color: var(--corsecundaria);
+        padding: -25px;
+    }
+    .service-item p, .service-item ul{
+        width: 250px;
+    }
+
+    /*Conteudo exclusivo para mobile*/
+
+    .exclusive-mobile{
+        display: block;
+        position: relative;
+        height: 280px;
+    }
+    .img-projetos{
+        background: url(../imagens/fundomob01.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -250px 0;
+        width: 100%;
+        height: 280px;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    .content-exclusive{
+        position: absolute;
+        width: 300px;
+        top: 0;
+        right: 0;
+        text-align: right;
+        padding-right: 30px;
+        color: var(--corprincipal);
+    }
+    .content-exclusive h2{
+        color: var(--corprincipal);
+        font-size: 18px;
+        padding: 15px 30px;
+        font-weight: normal;
+    }
+    .content-exclusive p{
+        color: var(--verdelimao);
+        font-size: 11px;
+        padding: 0 30px;
+    }
+    .content-exclusive input{
+        width: 100px;
+        height: 35px;
+        border-radius: 25px;
+        background-color: var(--verdelimao);
+        outline: 0;
+        margin: 25px 30px;
+        color: white;
+        text-transform: uppercase;
+        border: 0;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.331);
+    }
+
+    section.sobre{
+        display: block;
+        height: 280px;
+    }
+    #sobre-img{
+        display: none;
+    }
+    #content-sobre{
+        display: block;
+        width: calc(100% + 50px);
+        margin: 0 0 0 -50px;
+        background-image: url(../imagens/fundomob02.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top left;
+        overflow: hidden;
+
+    }
+    #content-sobre > div{
+        margin-left: 130px;
+    }
+    #autor{
+        padding: 10px;
+    }
+    #autor h2{
+        font-size: 14px;
+        padding: 0;
+        margin: 0px 0px -3px 0;
+    }
+    #autor .underline{
+        margin-bottom: 5px;
+    }
+    .circle{
+        margin: 10px 10px 10px 30px;
+        width: 60px;
+        height: 60px;
+    }
+    .marcadagua{
+        position: relative;
+        bottom: 0;
+    }
+    .mobile-service{display: none;}
+
+    .redes_sociais > ul >li{
+        display: inline-block;
+        margin: 5px 30px 5px 0;
+        font-size: 20px;
+    }
+    .redes_sociais i{
+        font-size: 25px;
+    }
+    .redes_sociais a{
+        font-size: 20px;
+    }
+    .footer-mobile{
+        width: 600px;
+        height: 300px;
+        position: relative;
+    }
+        .logo-footer{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .marcadagua{
+            position: absolute;
+            height: 300px;
+            bottom: 0;
+            background-size: contain;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            opacity: 0.1;
+        }
+}

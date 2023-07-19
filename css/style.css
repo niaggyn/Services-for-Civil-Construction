@@ -1,0 +1,483 @@
+@font-face {
+    font-family: SegoeUI;
+    src: url(../font/Segoe\ UI.ttf);
+    font-weight: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --corprincipal: #004A25;
+    --corclara: #E7F5E8;
+    --corsecundaria:#008A45;
+    --corauxiliar:#1E6341;
+    --verdeclaro:#caf6cc;
+    --verdeclaro02: #45BF55;
+    --verdelimao: #0FA823;
+}
+
+body,html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    max-width: 1180px;
+    height: 100%;
+    margin: 0 auto;;
+}
+
+/*Header*/
+header{
+    max-width: 1000px;
+    height: 90px;
+    margin: 0 auto;
+    position: relative;
+}
+.menu-mobile{
+    display: none;
+}
+.logoaux{
+    background: url(../imagens/logos/logoaux.png);
+    background-size: cover;
+    width: 100px;
+    height: 75px;
+    float: left;
+    position: absolute;
+    bottom: 0;
+}
+
+.logo{
+    float: left;
+    background-image: url(../imagens/logos/logo.png);
+    background-size: contain;
+    width: 200px;
+    background-repeat: no-repeat;
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+}
+
+.menu{
+    width: calc(100% - 450px);
+    float: right;
+}
+.menu > ul > li{
+    list-style-type: none;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.331);
+    margin: 30px 15px;
+}
+.menu > ul > li >a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--corprincipal);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+/*Secao Carrosel*/
+
+.galeria{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-color: var(--corsecundaria);
+}
+.carrosel img{
+    display: none;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+}
+.link{
+    position: absolute;
+    right: 15%;
+    top: 25px;
+    color: white;
+}
+.link h3 a{
+    text-decoration: underline;
+    color: white;
+}
+.slider-buttom{
+    width: 150px;
+    height: 20px;
+    margin: 15px auto;
+    display: block;
+}
+.slider-buttom .actived-buttom{
+    background-color: #004A25;
+}
+.slider-buttom div{
+    cursor: pointer;
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: var(--verdeclaro);
+    border-radius: 50%;
+    margin: 10px 5px;
+}
+
+/*Chamada e formulario*/
+
+section.chamada{
+    padding: 20px 150px;
+    height: 300px;
+}
+    .chamada h1{
+        margin: 15px 0 35px 0;
+        text-align: center;
+        font-style: italic;
+        font-weight: lighter;
+        color: var(--corprincipal);
+    }
+    .chamada p{
+        text-align: justify;
+        color: var(--corauxiliar);
+        margin-bottom: 35px;
+    }
+    .formulario{
+        width: 600px;
+        height: auto;
+        margin: 25px auto;
+        position: relative;
+    }
+    .formulario i{
+        position: absolute;
+        margin: 10px;
+        top: 0;
+        left: 0;
+        z-index: 4;
+    }
+    .formulario > input[type=email]{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 35px;
+        border-radius: 25px;
+        padding: 0 35px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.349);
+        z-index: 1;
+        outline: 0;
+        border: 0;
+    }
+    .formulario > input[type=email]::placeholder{
+        font-style: italic;
+        position: absolute;
+        bottom: 8px;
+    }
+    .formulario > input[type=email]:focus{
+        position: absolute;
+        bottom: 8px;
+    }
+    .formulario > input[type=submit]{
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 22px;
+        width: 300px;
+        height: 35px;
+        border-radius: 25px;
+        padding: 0 25px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.331);
+        z-index: 0;
+        background-color: var(--corprincipal);
+        color: white;
+        font-size: 18;
+        font-weight: lighter;
+        font-style: italic;
+        outline: 0;
+        cursor: pointer;
+        border: 0;
+    }
+
+/*Secao Serviços*/
+
+section.services{
+    width: 100%;
+    height: 1150px;
+    background-color: var(--verdeclaro);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.495);
+}
+.services h1{
+    text-transform: uppercase;
+    padding: 25px 16% 5px;
+    color: var(--corprincipal);
+    position: relative;
+}
+.line{
+    position: absolute;
+    left: 0;
+    width: 330px;
+    height: 1px;
+    background-color: var(--corauxiliar);
+}
+    .service_master{
+        background-color: white;
+        height: 400px;
+        border-radius: 25px;
+        margin: 25px auto;
+    }
+    #img-master{
+        background: url(../imagens/galeria/servicos/3d.jpg);
+        background-size: cover;
+        width: 700px;
+        height: 400px;
+        background-color:white;
+        float: left;
+        border-radius: 25px;
+        outline: 0;
+        margin-right: 15px;
+    }
+    #content-service-master{
+        position: relative;
+        padding: 25px;
+        margin: 25px;
+    }
+    #content-service-master h2{
+        text-align: center;
+        padding: 35px;
+        color: var(--corprincipal);
+    }
+    #content-service-master p{
+        padding:0 25px 15px;
+        text-align: justify;
+        color: var(--corsecundaria);
+        font-weight: normal;
+        font-size: medium;
+    }
+    #content-service-master input{
+        cursor: pointer;
+        position: absolute;
+        right: 60px;
+        width: 250px;
+        height: 35px;
+        border-radius: 25px;
+        background-color: var(--verdelimao);
+        outline: 0;
+        margin: 25px 60px;
+        color: white;
+        text-transform: uppercase;
+        border: 0;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.331);
+    }
+
+    .others-services{
+        grid-column: 3;
+        gap: 35px;
+        max-width: 1050px;
+    }
+    .service-item{
+        float: left;
+        width: 250px;
+        margin:50px 50px;
+        color: var(--corsecundaria);
+    }
+    .service-img01{
+        width: 250px;
+        height: 250px;
+        background: url(../imagens/galeria/servicos/orçamento.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-color: white;
+        border-radius: 25px;
+        position: relative;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.171);
+        z-index: 1;
+    }
+        .service-item h2{
+            position: absolute;
+            color: var(--corprincipal);
+            font-size: 18px;
+            text-align: center;
+            bottom: 5px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-weight: normal;
+            width: 250px;
+            z-index: 3;
+        }
+ 
+    .gradiente{
+        border-radius: 25px;
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        background-image: linear-gradient(transparent,rgba(255, 255, 255, 0.982));
+        z-index: 2;
+    }
+    .service-item p{
+        text-align: center;
+        padding: 15px;
+        font-size: 16px;
+        font-weight: lighter;
+    }
+    .service-item ul{
+        list-style-type: none;
+        text-align: center;
+        padding:0 15px;
+        font-size: 16px;
+        font-weight: lighter;
+    }
+    .service-item input{
+        width: 100px;
+        height: 35px;
+        border-radius: 25px;
+        background-color: var(--verdelimao);
+        outline: 0;
+        margin: 25px 0px;
+        color: white;
+        text-transform: uppercase;
+        border: 0;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.331);
+        cursor: pointer;
+    }
+    .service-item:nth-last-child(3) > .service-img01{
+        background: url(../imagens/galeria/servicos/planta.jpg);
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+    .service-item:nth-of-type(2) > .service-img01{
+        background: url(../imagens/galeria/servicos/supervisao.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-color: white;
+    }
+
+    .exclusive-mobile{
+        display: none;
+    }
+    
+/*Secao sobre*/
+
+section.sobre{
+    width: 100%;
+    height: 400px;
+    margin: 50px 0;
+    display: flex;
+}
+#sobre-img{
+    width: 50%;
+    background: url(../imagens/galeria/servicos/cad.jpg);
+    background-size: cover;
+}
+#content-sobre{
+    width: 50%;
+    position: relative;
+    background-image: url(../imagens/fundo.png);
+    margin-left: 15px;
+}
+#content-sobre > div{
+    width: 500px;
+    height: 400px;
+    padding: 30px;
+    color: white;
+}
+#content-sobre > div > p {
+    padding-top: 25px;
+    font-weight: lighter;
+    padding-bottom: 50px;
+}
+
+#autor{
+    position: absolute;
+    width: 70%;
+    padding-top: 25px;
+
+}
+.circle{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 10px 25px 0 0;
+}
+#autor h2:first-of-type{
+    font-weight: normal;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+#autor h2 {
+    font-weight: lighter;
+    font-size: 16px;
+    font-style: italic;
+}
+#autor .underline{
+    height: 2px;
+    width: 350px;
+    border: 1px solid white;
+    margin-left: 105px;
+    margin-bottom: 10px;
+}
+
+
+
+/*Rodape*/
+footer{
+    width: 100%;
+    height: 500px;
+    color: var(--corprincipal);
+    position: relative;
+}
+footer p{
+    font-weight: lighter;
+}
+.endereco{
+    float: left;
+    margin: 30px 100px 30px 30px;
+}
+.contato{
+    float: left;
+    margin: 30px 100px 30px 30px;
+}
+.redes_sociais{
+    margin: 30px 100px 30px 30px;
+}
+.redes_sociais a{text-decoration: none;}
+.redes_sociais ul, .redes_sociais li{
+    list-style-type: none; padding: 5px 0px;
+}
+
+.logo-footer {
+    width: 250px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    background-image: url(../imagens/logos/logo.png);
+}
+.marcadagua{
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    background: url(../imagens/logos/logoaux.png);
+    background-size: cover;
+    bottom: 0;
+    right: 0;
+    opacity: 0.2;
+}
