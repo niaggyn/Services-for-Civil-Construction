@@ -46,10 +46,10 @@ $(function(){
         var el = $('.menu');
         if(el.is(':visible')){
             el.fadeOut(500);
-            $('.carrosel').css('margin-top','30px');
+            $('.carrosel').css('margin-top','0px');
         }else{
             el.show(500);
-            $('.carrosel').css('margin-top', '100px');
+            $('.carrosel').css('margin-top', '40px');
         }
     })
 });
